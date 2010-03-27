@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
+  require 'fraction'
+  #fractional is nice but has problems with thirds, need to devise best use of fraction
+  
   def index
   end
 

@@ -1,10 +1,11 @@
 class CreateRecipes < ActiveRecord::Migration
   def self.up
     create_table :recipes do |t|
-      t.string :title
+      t.string :title, :founder, :source
+      t.text :thoughts
       t.integer :yields
       t.integer :crafted, :default => 1
-      #t.datetime :time
+      t.datetime :tried
       t.timestamps
     end
   end

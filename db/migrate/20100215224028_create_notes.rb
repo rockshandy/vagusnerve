@@ -1,7 +1,8 @@
 class CreateNotes < ActiveRecord::Migration
   def self.up
     create_table :notes do |t|
-      t.integer :rid, :tid
+      t.integer :rid
+      t.string :type
       t.text :desc
       t.timestamps
     end

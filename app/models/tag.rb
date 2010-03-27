@@ -1,3 +1,5 @@
 class Tag < ActiveRecord::Base
-#TODO: develop way to check if tags exist already? just having a huge list of tags to choose from could look ugly when large is there a way to search as you type for possible tags?
+#TODO: look into auto complete, jquery plugin perhaps?
+#TODO: look into polymorphism to tag more than recipes?
+  has_and_belongs_to_many :recipes
 end
