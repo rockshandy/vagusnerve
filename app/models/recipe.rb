@@ -11,4 +11,6 @@ class Recipe < ActiveRecord::Base
   has_many :ingredients, :through => :aspects
   
   has_and_belongs_to_many :tags
+  
+  has_many :notes
 end
