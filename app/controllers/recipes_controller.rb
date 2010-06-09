@@ -26,5 +26,4 @@ class RecipesController < ApplicationController
   # DESTROY /recipes/:id
   def destroy
   end
-
 end
