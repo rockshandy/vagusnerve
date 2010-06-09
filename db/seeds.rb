@@ -2,10 +2,9 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
-#   
+#
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Major.create(:name => 'Daley', :city => cities.first)
-
+#   Mayor.create(:name => 'Daley', :city => cities.first)
 # TODO: figure out best way to get recipes typed and put in, form best way to go or ruby parser type thing with a file typed in a certain way?
 
 #From format: Title, Months.Year.Page
