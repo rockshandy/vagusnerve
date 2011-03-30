@@ -2,8 +2,8 @@
 %html
   %head
     = stylesheet_link_tag 'style'
-    = javascript_include_tag 'jquery-1.4.2'
-    = javascript_include_tag 'application.js'
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
     = javascript_include_tag @add_js if @add_js
   %body
     #contentWrapper
@@ -17,3 +17,4 @@
         = yield
       #ftr.clr
         %p here be a copyright to Capt. Phil Eberhardt
+

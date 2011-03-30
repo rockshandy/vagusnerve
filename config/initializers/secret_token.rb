@@ -2,6 +2,6 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-# Make sure the secret is at least 30 characters and all random, 
+# Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Rails.application.config.secret_token = '971b453c1d827dcb9a7dc007bd881d0e5a28a4b26d6e86ad02a42795254b78ec2078885e4ec39a77a3862303444beb63b71f13fa24c853bfbf7d7f8208fccb1e'
+Vagusnerve::Application.config.secret_token = '81c00b2a2aef771367125f0f8d646e82d9e403e3f6c4e96c91f04f9ff84088e5aeee6c04d3fb3238d15e30d0c11021feceb6c261a973c6ab81a73ebb76ede47f'

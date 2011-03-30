@@ -1,4 +1,4 @@
-Vagusnerve::Application.routes.draw do |map|
+Vagusnerve::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -16,12 +16,12 @@ Vagusnerve::Application.routes.draw do |map|
   # Sample resource route with options:
   #   resources :products do
   #     member do
-  #       get :short
-  #       post :toggle
+  #       get 'short'
+  #       post 'toggle'
   #     end
   #
   #     collection do
-  #       get :sold
+  #       get 'sold'
   #     end
   #   end
 
@@ -35,7 +35,7 @@ Vagusnerve::Application.routes.draw do |map|
   #   resources :products do
   #     resources :comments
   #     resources :sales do
-  #       get :recent, :on => :collection
+  #       get 'recent', :on => :collection
   #     end
   #   end
 
@@ -46,12 +46,10 @@ Vagusnerve::Application.routes.draw do |map|
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root" just remember to delete public/index.html.
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
   root :to => "home#index"
-  
-  # recipes routes
-  # resources :recipes, :path_names => { :edit => 'tweak' }
-  
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
